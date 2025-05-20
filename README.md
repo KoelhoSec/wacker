@@ -1,7 +1,11 @@
 # Overview
 A set of scripts to help perform an online dictionary attack against a WPA3 access point. Wacker leverages the wpa_supplicant control interface to control the operations of the supplicant daemon and to get status information and event notifications ultimately helping speedup connection attempts during brute force attempts.
 
-NOTE: This is a modified version of original wacker.py that runs with more verbose during execution.
+NOTE: This is a modified version of original wacker.py that runs with more verbose during execution. Usage:
+
+```
+sudo python3 wacker.py -i wlan0 -b AA:BB:CC:DD:EE:FF -s MyWiFi -f FREQ -w rockyou.txt
+```
 
 # Virtual Wifi Arena
 In lieu of finding a WPA3 AP for testing, consider setting up a local environment using mac80211_hwsim (details below) or by using the VMs provided by the RF Hackers Sanctuary (scoreboard.rfhackers.com).
